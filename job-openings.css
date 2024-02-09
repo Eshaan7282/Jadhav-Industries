@@ -1,0 +1,132 @@
+.job-container {
+    margin: 20px;
+  }
+  
+  .job {
+    background-color: #e2d0f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .apply-form {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .apply-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .apply-form label {
+    margin-top: 10px;
+  }
+  
+  .apply-form input[type="text"],
+  .apply-form input[type="email"],
+  .apply-form input[type="file"] {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .apply-form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .apply-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .apply-btn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .apply-btn:hover {
+    background-color: #45a049;
+  }
+  
+  header {
+    background-color: #FF6347; /* Slightly transparent white for contrast */
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .job-container {
+    background-color: #F0E68C; /* Light background for the job listings to stand out */
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth to the listings */
+  }
+  
+  .job {
+    margin-bottom: 20px;
+  }
+  
+  .apply-btn {
+    background-color: #4CAF50; /* Vibrant green for the apply button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .apply-btn:hover {
+    background-color: #43a047; /* Darker shade on hover */
+  }
+  
+  .apply-form {
+    display: none; /* Initially hide the form */
+    margin-top: 10px;
+  }
+  
+  .apply-form label,
+  .apply-form input,
+  .apply-form button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+  }
+  
+  .apply-form button {
+    margin-top: 10px;
+  }
+  
+  /* Additional styles as needed */
+  
