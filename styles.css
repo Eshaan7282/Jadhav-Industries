@@ -1,21 +1,52 @@
-body {
-    background-image: url("background.webp");
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  header {
-    background-image: url("background.webp");
-    background-size: 1600px 300px;
-    background-color: #cccccc;
-   }
-  header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-  }
+/* Styles for the header */
+header {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+  padding: 20px;
+}
+
+/* Styles for the welcome section */
+#welcome {
+  background-color: #FFD700; /* Gold */
+  color: black;
+}
+
+/* Styles for the benefits section */
+.benefits-container {
+  background-color: #EE82EE; 
+  color: white;
+}
+
+/* Styles for the job openings section */
+.job-container {
+  background-color: #FF6347; /* Tomato */
+  color: white;
+}
+
+/* Additional styles for individual job listings if needed */
+.job {
+  background-color: #F0E68C; /* Khaki */
+  color: black;
+}
+
+/* Styles for the main links at the bottom */
+.main-link {
+  background-color: #EE82EE; /* Violet */
+  color: black;
+}
+
+/* Ensure the main content also has a distinct background if needed */
+main {
+  background-color: #F5F5F5; /* White Smoke */
+  color: black;
+}
+
+/* General styles for all sections to ensure they stand out */
+section, div.benefit, div.job, div.main-link {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
   h1, h2, p {
     color: #333;
     text-align: center; /* Center the text */
@@ -86,8 +117,7 @@ body {
   }
   
   .logo.png {
-    position: absolute;
-    top: 20px;
+    top: 60px;
     right: 350px;
    }
    /* styles.css */
@@ -121,16 +151,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    height: 15px; /* set the height of the header to 100 pixels */
   }
   
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-style: italic;
-  }
   
   nav ul {
     list-style: none;
@@ -221,3 +245,145 @@ body {
     text-decoration: none;
     color: #333;
   }
+
+  .animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: greenyellow;
+    box-shadow: 0 0 0 2px greenyellow;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: greenyellow;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #212121;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px greenyellow;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  .cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+  }
+  
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  
