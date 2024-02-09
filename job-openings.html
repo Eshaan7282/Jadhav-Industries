@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Openings at Jadhav Industries</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="job-openings.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Company Logo"
+        width = "130"
+        height = "60"
+        />
+        
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job-openings.html">Job-Openings</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="sources.html">Sources</a></li>
+          </ul>
+        </nav>
+      </header>
+  <main>
+    <section id="jobOpenings" class="job-container">
+      <div class="job">
+        <h2>Software Engineer</h2>
+        <p>Location: Remote</p>
+        <p>We're looking for a skilled software engineer.</p>
+
+        <button class="apply-btn" onclick="document.getElementById('applyFormSoftwareEngineer').style.display='block'">Apply Now</button>
+        <div id="applyFormSoftwareEngineer" class="apply-form" style="display:none;">
+          <form action="/submit-application" method="post" enctype="multipart/form-data">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="resume">Resume (PDF only):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf" required>
+            <button type="submit">Submit Application</button>
+            <button type="button" onclick="document.getElementById('applyFormSoftwareEngineer').style.display='none'">Cancel</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="job">
+        <h2>Marketing Specialist</h2>
+        <p>Location: New York</p>
+        <p>Join our marketing team and make an impact.</p>
+ 
+        <button class="apply-btn" onclick="document.getElementById('applyFormMarketingSpecialist').style.display='block'">Apply Now</button>
+        <div id="applyFormMarketingSpecialist" class="apply-form" style="display:none;">
+          <form action="/submit-application" method="post" enctype="multipart/form-data">
+            <label for="nameMS">Name:</label>
+            <input type="text" id="nameMS" name="name" required>
+            <label for="emailMS">Email:</label>
+            <input type="email" id="emailMS" name="email" required>
+            <label for="resumeMS">Resume (PDF only):</label>
+            <input type="file" id="resumeMS" name="resume" accept=".pdf" required>
+            <button type="submit">Submit Application</button>
+            <button type="button" onclick="document.getElementById('applyFormMarketingSpecialist').style.display='none'">Cancel</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="job">
+        <h2>Product Manager</h2>
+        <p>Location: Remote</p>
+        <p>We're seeking an innovative Product Manager to lead product development and strategy.</p>
+        <button class="apply-btn" onclick="document.getElementById('applyFormProductManager').style.display='block'">Apply Now</button>
+        <div id="applyFormProductManager" class="apply-form" style="display:none;">
+          <form action="/submit-application" method="post" enctype="multipart/form-data">
+            <label for="namePM">Name:</label>
+            <input type="text" id="namePM" name="name" required>
+            <label for="emailPM">Email:</label>
+            <input type="email" id="emailPM" name="email" required>
+            <label for="resumePM">Resume (PDF only):</label>
+            <input type="file" id="resumePM" name="resume" accept=".pdf" required>
+            <button type="submit">Submit Application</button>
+            <button type="button" onclick="document.getElementById('applyFormProductManager').style.display='none'">Cancel</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="job">
+        <h2>Data Scientist</h2>
+        <p>Location: Remote</p>
+        <p>Seeking a Data Scientist passionate about big data and analytics to drive insights.</p>
+        <button class="apply-btn" onclick="document.getElementById('applyFormDataScientist').style.display='block'">Apply Now</button>
+        <div id="applyFormDataScientist" class="apply-form" style="display:none;">
+          <form action="/submit-application" method="post" enctype="multipart/form-data">
+            <label for="nameDS">Name:</label>
+            <input type="text" id="nameDS" name="name" required>
+            <label for="emailDS">Email:</label>
+            <input type="email" id="emailDS" name="email" required>
+            <label for="resumeDS">Resume (PDF only):</label>
+            <input type="file" id="resumeDS" name="resume" accept=".pdf" required>
+            <button type="submit">Submit Application</button>
+            <button type="button" onclick="document.getElementById('applyFormDataScientist').style.display='none'">Cancel</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="job">
+        <h2>Cloud Solutions Architect</h2>
+        <p>Location: Remote</p>
+        <p>Inviting a Cloud Solutions Architect to design scalable and secure cloud infrastructures.</p>
+        <button class="apply-btn" onclick="document.getElementById('applyFormCloudArchitect').style.display='block'">Apply Now</button>
+        <div id="applyFormCloudArchitect" class="apply-form" style="display:none;">
+          <form action="/submit-application" method="post" enctype="multipart/form-data">
+            <label for="nameCA">Name:</label>
+            <input type="text" id="nameCA" name="name" required>
+            <label for="emailCA">Email:</label>
+            <input type="email" id="emailCA" name="email" required>
+            <label for="resumeDS">Resume (PDF only):</label>
+            <input type="file" id="resumeDS" name="resume" accept=".pdf" required>
+            <button type="submit">Submit Application</button>
+            <button type="button" onclick="document.getElementById('applyFormCloudArchitect').style.display='none'">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.getElementById('applyFormSoftwareEngineer');
+      
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission for demonstration
+      
+            // Show a confirmation message
+            alert('Your application for the software engineer position has been submitted. Thank you!');
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.getElementById('applyFormMarketingSpecialist');
+      
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission for demonstration
+      
+            // Show a confirmation message
+            alert('Your application for the marketing specialist has been submitted. Thank you!');
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.getElementById('applyFormProductManager');
+      
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission for demonstration
+      
+            // Show a confirmation message
+            alert('Your application for the product manager position has been submitted. Thank you!');
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.getElementById('applyFormDataScientist');
+      
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission for demonstration
+      
+            // Show a confirmation message
+            alert('Your application for the data scientist position has been submitted. Thank you!');
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const form = document.getElementById('applyFormCloudArchitect');
+      
+          form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission for demonstration
+      
+            // Show a confirmation message
+            alert('Your application for the cloud architect position has been submitted. Thank you!');
+          });
+        });
+      </script>
+    </section>
+  </main>
+</body>
+</html>
