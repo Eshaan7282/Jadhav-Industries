@@ -145,6 +145,11 @@ section, div.benefit, div.job, div.main-link {
     height: 200px; /* Adjust height as needed */
     object-fit: cover; /* Maintain aspect ratio and cover the container */
   }
+  .benefit img {
+    width: 100%; /* Ensure image fills the container */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
   
   /* Flexbox styling for header */
   header {
@@ -386,4 +391,53 @@ section, div.benefit, div.job, div.main-link {
   .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
   }
+
+  footer {
+    background-color: #333; /* Ensure this contrasts well with white text */
+    color: #fff; /* White text color for contrast */
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter-container h2 {
+    margin: 0 auto;
+    margin-bottom: 10px; /* Space below the title */
+    color: #fff; /* Bright color for the title for better visibility */
+    font-size: 24px; /* Larger font size for visibility */
+    text-shadow: 2px 2px 4px #000; /* Optional: adds shadow for better legibility */
+}
+
+.newsletter-container p {
+  color: #fff;
+    margin-bottom: 20px; /* Space above the form */
+    font-size: 18px; /* Slightly larger font size for body text */
+    text-shadow: 1px 1px 3px #000; /* Optional: adds shadow for better legibility */
+}
+
+#newsletterForm {
+    display: inline-block;
+}
+
+#newsletterForm input[type="email"] {
+  padding: 10px;
+  margin-right: 10px; /* Space between the input field and the button */
+  border: none;
+  border-radius: 5px;
+  width: 250px; /* Fixed width for the email input */
+}
+
+#newsletterForm button {
+    background-color: #007bff; /* Vibrant blue for the button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger font size for readability */
+}
+
+#newsletterForm button:hover {
+    background-color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
   
