@@ -1,0 +1,71 @@
+/* Styles for the header */
+header {
+    background-color: #007BFF; /* Vivid Blue */
+    color: white;
+    padding: 20px;
+  }
+  
+  /* General styling for navigation links */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styles for the main content area */
+  main {
+    background-color: #F8F9FA; /* Light Grey */
+    color: black;
+    padding: 20px;
+  }
+  
+  /* Styles for the review sections */
+  .reviews {
+    background-color: #E9ECEF; /* Very Light Grey */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Styles for individual review articles */
+  .review {
+    background-color: #FFFFFF; /* White */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Styling for review titles and content for better readability */
+  .review-title {
+    color: #007BFF; /* Vivid Blue */
+  }
+  
+  .review-content {
+    color: #212529; /* Dark Grey */
+  }
+  
+  /* Styling for the review rating section */
+  .review-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .stars {
+    color: #FFD700; /* Gold */
+    margin-right: 10px;
+  }
+  
+  .rating-value {
+    color: #28A745; /* Green */
+  }
+  
