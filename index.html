@@ -9,26 +9,23 @@
 <body>
   <header>
     <img src="logo.png" alt="Company Logo"
-    width = "150"
-    height = "100"
+    width = "130"
+    height = "60"
     />
     <nav>
       <ul>
+        <li><a href="job-openings.html">Job-Openings</a></li>
         <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="apply.html">Apply Now</a></li>
         <li><a href="sources.html">Sources</a></li>
 
       </ul>
     </nav>
   </header>
-</body>
-<body>
+
   <section id="welcome">
     <h2>Welcome to Jadhav Industries Career Portal</h2>
     <p>Welcome to our company! We are committed to providing an amazing work environment and exciting career opportunities. </p>
-</body>
 
-<body>
   <main>
     <h1>Why Work With Us?</h1>
     <section class="benefits-container">
@@ -49,9 +46,7 @@
         <p>The company provides access to employee assistance programs (EAP) that offer confidential counseling, mental health support, financial planning advice, and resources for personal challenges employees may face.</p>
       </div>
   </main>
-</body>
 
-<body>
   <main>
     <h1>
       Job Openings
@@ -89,23 +84,61 @@
           <p>Help us build a great team and culture.</p>
         </div>
       </div>
+      <div class="view-more">
+        <button class="animated-button" id="redirectButton" class="animated-button">
+          <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+          <span class="text">View More Openings</span>
+          <span class="circle"></span>
+          <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+            ></path>
+          </svg>
+        </button>
+      </div>
     </section>
   </main>
+  <script>
+    document.getElementById('redirectButton').addEventListener('click', function() {
+        window.location.href = 'job-openings.html';
+    });
+    </script>
+    
 </body>
 <body>
 
   <main>
     
-      <p>Explore our:</p>
-      <div class="main-link">
-        <a href="reviews.html">Reviews</a>
-        <p>Read what our employees say about working with us.</p>
-      </div>
-      <div class="main-link">
-        <a href="apply.html">Apply Now</a>
-        <p>Submit your application for exciting opportunities.</p>
+      <div class="main-link" id="redirectButton2" class="cssbuttons-io-button">
+        <button class="cssbuttons-io-button">
+          Read what our employees say about working with us.
+          <div class="icon">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </button>
+        
       </div>
     </section>
   </main>
+  <script>
+    document.getElementById('redirectButton2').addEventListener('click', function() {
+        window.location.href = 'reviews.html';
+    });
+    </script>
 </body>
 </html>
